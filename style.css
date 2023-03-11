@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    font-family: sans-serif;
+    width: 100%;
+    height: 150vh;
+    background-color:#f7f7ff;
+    
+}
+
+nav{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > h1{
+    font-weight: bold;
+}
+
+nav ul li{
+    display: inline-flex;
+    padding-left: 3rem;
+    margin-top: 10px;
+}
+
+nav > p {
+    color: #fff;
+    background-color: #000;
+    padding: 10px 17px;
+    border-radius: 5px;
+}
+
+.menu{
+    display: none;
+}
+
+/* SIDE NAV */
+
+.side-nav{
+    height: 100%;
+    width:0;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+    display: block;
+    transition: .3s;
+}
+
+.side-nav a{
+    color: #fff;
+}
+
+.btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+/* SECTION ONE */
+.content{
+   text-align: center;
+   margin-top: 7rem;
+}
+
+.content > button{
+    margin-top: 2rem;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.sign-up{
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.login{
+    margin-left: 10px;
+    border: 2px solid;
+    background: #fff;
+}
+
+
+.image > .image-one{
+    width: 40rem;
+    object-fit: contain;
+}
+
+
+/* SECTION TWO */
+
+.container-two{
+    margin-top: 2rem;
+    font-family: sans-serif;
+    
+}
+
+.container-two > h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content-two{
+    margin-top: 2rem;
+    
+}
+
+.first-page{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-two{
+    width: 25rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    background: #000;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.writing-one{
+    margin-top: 4rem;
+}
+
+.writing-one > p{
+    margin-top: .5rem;
+    line-height: 1.5rem;
+}
+
+
+.second-page{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.writing-two{
+    margin-top: 6rem;
+}
+
+.writing-two > p{
+    margin-top: .5rem;
+    line-height: 1.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    margin-top: 10rem;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    padding-bottom: 4rem;
+}
+
+.container-three{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+}
+
+.container-three > h1 {
+    font-size: 20px;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content > h4{
+    margin-right: 4rem;
+}
+.port{
+    margin-left: 2rem;
+}
+
+.subscribe{
+
+    display: inline-block;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 710px){
+    .menu{
+        display: block;
+        font-size: 35px;
+        
+    }
+     nav ul{
+        display: none;
+    }
+    nav p{
+        display: none;
+    }
+    
+}
+
+@media(max-width: 640px){
+    .image > .image-one{
+        width: 35rem;
+        object-fit: contain;
+    }
+}
+
+@media(max-width: 570px){
+    .image > .image-one{
+        width: 30rem;
+        object-fit: contain;
+    }
+
+.container {
+    font-family: sans-serif;
+    width: 100%;
+    height: 135vh;
+    background-color:#f7f7ff;
+    
+}
+}
+
+@media (max-width:480px){
+    .image > .image-one{
+        width: 27rem;
+        object-fit: contain;
+    }
+    .image-two{
+        width: 22rem;
+    }
+    .container {
+        font-family: sans-serif;
+        width: 100%;
+        height: 135vh;
+        background-color:#f7f7ff;
+        
+    }
+}
+
+@media (max-width:430px){
+    .image > .image-one{
+        width: 24rem;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    .container {
+        font-family: sans-serif;
+        width: 100%;
+        height: 125vh;
+        background-color:#f7f7ff;
+        
+    }
+
+}
+
+@media (max-width:380px){
+    .image > .image-one{
+        width: 21rem;
+        object-fit: contain;
+        
+    }
+    .image-two{
+        width: 19rem;
+    }
+    .container {
+        font-family: sans-serif;
+        width: 100%;
+        height: 120vh;
+        background-color:#f7f7ff;
+        
+    }
+}
+
+@media (max-width:330px) {
+    .image > .image-one{
+        width: 18rem;
+        object-fit: contain;
+    }
+    .image-two{
+        width: 16rem;
+    }
+}
